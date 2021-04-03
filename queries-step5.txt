@@ -1,0 +1,30 @@
+//create table
+CREATE TABLE local_spots(name VARCHAR (50) PRIMARY KEY, coordinates point);
+
+//fill table
+Insert into local_spots (name, coordinates) VALUES ('Target', ST_GeomFromText('POINT(-121.2556171 38.7452368)'));
+Insert into local_spots (name, coordinates) VALUES ('Ceramic Lounge', ST_GeomFromText('POINT(-121.2511762 38.7439274)'));
+Insert into local_spots (name, coordinates) VALUES ('Got Your Goat Yarn', ST_GeomFromText('POINT(-121.2511762 38.7439274)'));
+Insert into local_spots (name, coordinates) VALUES ('Sprouts', ST_GeomFromText('POINT(-121.2511762 38.7439274)'));
+Insert into local_spots (name, coordinates) VALUES ('Maidu Library', ST_GeomFromText('POINT(-121.2580397 38.7418394)'));
+Insert into local_spots (name, coordinates) VALUES ('Maidu Community Center', ST_GeomFromText('POINT(-121.2581755 38.7394026)'));
+Insert into local_spots (name, coordinates) VALUES ('Big 5', ST_GeomFromText('POINT(-121.2567396 38.7442426)'));
+Insert into local_spots (name, coordinates) VALUES ('TJMaxx', ST_GeomFromText('POINT(-121.2567396 38.7442426)'));
+Insert into local_spots (name, coordinates) VALUES ('Korean BBQ', ST_GeomFromText('POINT(-121.2567396 38.7442426)'));
+Insert into local_spots (name, coordinates) VALUES ('Taqueria', ST_GeomFromText('POINT(-121.2582368 38.743263)'));
+Insert into local_spots (name, coordinates) VALUES ('The Bead and Crystal', ST_GeomFromText('POINT(-121.2536863 38.7431169)'));
+Insert into local_spots (name, coordinates) VALUES ('Dentist', ST_GeomFromText('POINT(-121.2546741 38.7422297)'));
+Insert into local_spots (name, coordinates) VALUES ('Home', ST_GeomFromText('POINT(-121.2558772 38.7403943)'));
+
+
+//convex hull
+Select st_astext(ST_ConcaveHull(ST_Collect(coordinates::geometry),1)) As polygon FROM local_spots
+
+POLYGON((-121.2581755 38.7394026,-121.2582368 38.743263,-121.2556171 38.7452368,-121.2511762 38.7439274,-121.2558772 38.7403943,-121.2581755 38.7394026))
+
+
+//four closest spots
+SELECT name, coordinates
+FROM local_spots
+ORDER BY coordinates <-> (select coordinates from local_spots where name = 'Home')
+LIMIT 4;

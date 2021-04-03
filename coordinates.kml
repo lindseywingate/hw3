@@ -1,0 +1,102 @@
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle>
+<Icon>
+<href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Placemark>
+<name>Target</name>
+<description>Basic shopping for clothes, home, and some groceries.</description>
+<Point>
+<coordinates>-121.2556171, 38.7452368</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ceramic Lounge</name>
+<description>Paint ceramic dishes yourself</description>
+<Point>
+<coordinates>-121.2511762, 38.7439274</coordinates>å
+</Point>
+</Placemark>
+<Placemark>
+<name>Got Your Goat Yarn</name>
+<description>Yarn and other doodads.</description>
+<Point>
+<coordinates>-121.2511762, 38.7439274</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sprouts</name>
+<description>Grocery store with mostly organic products.</description>
+<Point>
+<coordinates>-121.2511762, 38.7439274</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maidu Library</name>
+<description>Regional library.</description>
+<Point>
+<coordinates>-121.2580397, 38.7418394</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maidu Community Center</name>
+<description>Meeting center for activities, classes, etc.</description>
+<Point>
+<coordinates>-121.2581755, 38.7394026</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Big 5</name>
+<description>Store for sporting goods and workout equipment.</description>
+<Point>
+<coordinates>-121.2567396, 38.7442426</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TJMaxx</name>
+<description>Shopping for clothes and home products.</description>
+<Point>
+<coordinates>-121.2567396, 38.7442426</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Korean BBQ</name>
+<description></description>
+<Point>
+<coordinates>-121.2567396, 38.7442426</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Taqueria</name>
+<description>Mexican food</description>
+<Point>
+<coordinates>-121.2582368, 38.743263</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>The Bead and Crystal</name>
+<description>Beads for jewelry making and crystals.</description>
+<Point>
+<coordinates>-121.2536863, 38.7431169</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Dentist</name>
+<description>Kind dentist that misses identifying some cavities.</description>
+<Point>
+<coordinates>-121.2546741, 38.7422297</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Home</name>
+<description>A house in my neighborhood. No you can’t see my real house.</description>
+<Point>
+<coordinates>-121.2558772, 38.7403943</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
